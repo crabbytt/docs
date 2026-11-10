@@ -99,7 +99,12 @@ export const ptBR: UIStrings = {
         time: '~5 min',
         description:
           'Tudo incluído — MongoDB, MeiliSearch e RAG API são executados automaticamente.',
-        steps: ['Clone o repositório', 'Copie .env.example para .env', 'Execute docker compose up'],
+        steps: [
+          'Clone o repositório',
+          'Copie .env.example para .env',
+          'Execute docker compose up',
+          'Abra localhost:3080 e cadastre-se',
+        ],
         prereqs: ['Docker Desktop'],
       },
       npm: {
@@ -111,8 +116,9 @@ export const ptBR: UIStrings = {
           'Clone e instale as dependências',
           'Configure .env e inicie o MongoDB',
           'Execute npm run backend',
+          'Abra localhost:3080 e cadastre-se',
         ],
-        prereqs: ['Node.js v20.19+', 'Instância MongoDB'],
+        prereqs: ['Node.js v24.16.0', 'Instância MongoDB'],
       },
       railway: {
         tag: 'Um clique',
@@ -184,6 +190,35 @@ export const ptBR: UIStrings = {
       },
     },
     categories: {
+      agentic: {
+        title: 'IA agêntica',
+        items: {
+          skills: {
+            title: 'Skills',
+            description: 'Instruções SKILL.md reutilizáveis que os agentes podem invocar',
+          },
+          subagents: {
+            title: 'Subagentes',
+            description: 'Delegue tarefas específicas a agentes filhos isolados',
+          },
+          scheduledChats: {
+            title: 'Chats agendados',
+            description: 'Execute agentes salvos em agendamentos recorrentes',
+          },
+          agentPlugins: {
+            title: 'Plugins de agentes',
+            description: 'Pacotes experimentais de Skills, servidores MCP e hooks',
+          },
+          agentsApi: {
+            title: 'Agents API (beta)',
+            description: 'Execute agentes e receba eventos de forma programática',
+          },
+          pullRequests: {
+            title: 'Pull requests de conversas',
+            description: 'Status de pull requests e CI para chats que executam código',
+          },
+        },
+      },
       searchKnowledge: {
         title: 'Busca e conhecimento',
         items: {
@@ -240,6 +275,30 @@ export const ptBR: UIStrings = {
             title: 'Streams retomáveis',
             description: 'Reconecte e retome respostas interrompidas automaticamente',
           },
+          composer: {
+            title: 'Compositor de mensagens',
+            description: 'Anexe arquivos e ative ferramentas pela paleta +',
+          },
+          settings: {
+            title: 'Configurações pessoais',
+            description: 'Gerencie preferências por usuário e por navegador',
+          },
+          navigation: {
+            title: 'Barra lateral e navegação',
+            description: 'Chats, conversas fixadas, painéis e gaveta no celular',
+          },
+          messageActions: {
+            title: 'Ações de mensagens',
+            description: 'Edite, execute novamente, cite, copie e faça fork de mensagens',
+          },
+          projects: {
+            title: 'Projetos',
+            description: 'Agrupe chats relacionados com instruções e arquivos compartilhados',
+          },
+          smoothStreaming: {
+            title: 'Streaming suave',
+            description: 'Exiba o texto em streaming com um fade suave',
+          },
         },
       },
       security: {
@@ -260,6 +319,14 @@ export const ptBR: UIStrings = {
           moderation: {
             title: 'Sistema de moderação',
             description: 'Moderação de conteúdo e controles de segurança',
+          },
+          accessControl: {
+            title: 'Controle de acesso',
+            description: 'Permissões granulares para agentes, prompts e servidores MCP',
+          },
+          insights: {
+            title: 'Insights de administração',
+            description: 'Painel de uso e atividade dos agentes',
           },
         },
       },

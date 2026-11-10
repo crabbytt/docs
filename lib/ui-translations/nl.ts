@@ -102,6 +102,7 @@ export const nl: UIStrings = {
           'Clone de repository',
           'Kopieer .env.example naar .env',
           'Voer docker compose up uit',
+          'Open localhost:3080 en registreer',
         ],
         prereqs: ['Docker Desktop'],
       },
@@ -114,8 +115,9 @@ export const nl: UIStrings = {
           'Clone en installeer afhankelijkheden',
           'Configureer .env en start MongoDB',
           'Voer npm run backend uit',
+          'Open localhost:3080 en registreer',
         ],
-        prereqs: ['Node.js v20.19+', 'MongoDB-instantie'],
+        prereqs: ['Node.js v24.16.0', 'MongoDB-instantie'],
       },
       railway: {
         tag: 'Eén klik',
@@ -181,6 +183,35 @@ export const nl: UIStrings = {
       },
     },
     categories: {
+      agentic: {
+        title: 'Agentische AI',
+        items: {
+          skills: {
+            title: 'Skills',
+            description: 'Herbruikbare SKILL.md-instructies die agents kunnen aanroepen',
+          },
+          subagents: {
+            title: 'Subagents',
+            description: 'Delegeer gerichte taken aan geïsoleerde onderliggende agents',
+          },
+          scheduledChats: {
+            title: 'Geplande chats',
+            description: "Voer opgeslagen agents uit volgens terugkerende schema's",
+          },
+          agentPlugins: {
+            title: 'Agent-plugins',
+            description: 'Experimentele pakketten met Skills, MCP-servers en hooks',
+          },
+          agentsApi: {
+            title: 'Agents API (bèta)',
+            description: 'Voer agents uit en ontvang events programmatisch',
+          },
+          pullRequests: {
+            title: 'Pull requests van gesprekken',
+            description: 'Pull request- en CI-status voor chats die code uitvoeren',
+          },
+        },
+      },
       searchKnowledge: {
         title: 'Zoeken en kennis',
         items: {
@@ -237,6 +268,30 @@ export const nl: UIStrings = {
             title: 'Hervatbare streams',
             description: 'Automatisch opnieuw verbinden en onderbroken antwoorden hervatten',
           },
+          composer: {
+            title: 'Berichteninvoer',
+            description: 'Voeg bestanden toe en schakel tools in via het +-palet',
+          },
+          settings: {
+            title: 'Persoonlijke instellingen',
+            description: 'Beheer voorkeuren per gebruiker en per browser',
+          },
+          navigation: {
+            title: 'Zijbalk en navigatie',
+            description: 'Chats, vastgezette gesprekken, panelen en mobiele lade',
+          },
+          messageActions: {
+            title: 'Berichtacties',
+            description: 'Bewerk, voer opnieuw uit, citeer, kopieer en fork berichten',
+          },
+          projects: {
+            title: 'Projecten',
+            description: 'Groepeer gerelateerde chats met gedeelde instructies en bestanden',
+          },
+          smoothStreaming: {
+            title: 'Vloeiende streaming',
+            description: 'Laat gestreamde tekst zacht infaden tijdens het genereren',
+          },
         },
       },
       security: {
@@ -257,6 +312,14 @@ export const nl: UIStrings = {
           moderation: {
             title: 'Moderatiesysteem',
             description: 'Contentmoderatie en veiligheidscontroles',
+          },
+          accessControl: {
+            title: 'Toegangsbeheer',
+            description: 'Fijnmazige rechten voor agents, prompts en MCP-servers',
+          },
+          insights: {
+            title: 'Beheerinzichten',
+            description: 'Dashboard voor gebruik en activiteit van agents',
           },
         },
       },

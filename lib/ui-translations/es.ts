@@ -106,6 +106,7 @@ export const es: UIStrings = {
           'Clonar el repositorio',
           'Copiar .env.example a .env',
           'Ejecutar docker compose up',
+          'Abre localhost:3080 y regístrate',
         ],
         prereqs: ['Docker Desktop'],
       },
@@ -118,8 +119,9 @@ export const es: UIStrings = {
           'Clonar e instalar dependencias',
           'Configurar .env e iniciar MongoDB',
           'Ejecutar npm run backend',
+          'Abre localhost:3080 y regístrate',
         ],
-        prereqs: ['Node.js v20.19+', 'Instancia de MongoDB'],
+        prereqs: ['Node.js v24.16.0', 'Instancia de MongoDB'],
       },
       railway: {
         tag: 'Un clic',
@@ -192,6 +194,35 @@ export const es: UIStrings = {
       },
     },
     categories: {
+      agentic: {
+        title: 'IA con agentes',
+        items: {
+          skills: {
+            title: 'Skills',
+            description: 'Instrucciones SKILL.md reutilizables que los agentes pueden invocar',
+          },
+          subagents: {
+            title: 'Subagentes',
+            description: 'Delega tareas específicas en agentes secundarios aislados',
+          },
+          scheduledChats: {
+            title: 'Chats programados',
+            description: 'Ejecuta agentes guardados con horarios recurrentes',
+          },
+          agentPlugins: {
+            title: 'Plugins de agentes',
+            description: 'Paquetes experimentales de Skills, servidores MCP y hooks',
+          },
+          agentsApi: {
+            title: 'Agents API (beta)',
+            description: 'Ejecuta agentes y recibe eventos mediante programación',
+          },
+          pullRequests: {
+            title: 'Pull requests de conversaciones',
+            description: 'Estado de pull requests y CI para chats que ejecutan código',
+          },
+        },
+      },
       searchKnowledge: {
         title: 'Búsqueda y conocimiento',
         items: {
@@ -249,6 +280,30 @@ export const es: UIStrings = {
             title: 'Transmisiones reanudables',
             description: 'Reconexión automática y reanudación de respuestas interrumpidas',
           },
+          composer: {
+            title: 'Compositor de mensajes',
+            description: 'Adjunta archivos y activa herramientas desde la paleta +',
+          },
+          settings: {
+            title: 'Ajustes personales',
+            description: 'Gestiona preferencias por usuario y por navegador',
+          },
+          navigation: {
+            title: 'Barra lateral y navegación',
+            description: 'Chats, conversaciones fijadas, paneles y menú móvil',
+          },
+          messageActions: {
+            title: 'Acciones de mensajes',
+            description: 'Edita, vuelve a ejecutar, cita, copia y bifurca mensajes',
+          },
+          projects: {
+            title: 'Proyectos',
+            description: 'Agrupa chats relacionados con instrucciones y archivos compartidos',
+          },
+          smoothStreaming: {
+            title: 'Transmisión fluida',
+            description: 'Muestra el texto transmitido con un fundido suave',
+          },
         },
       },
       security: {
@@ -269,6 +324,14 @@ export const es: UIStrings = {
           moderation: {
             title: 'Sistema de moderación',
             description: 'Moderación de contenido y controles de seguridad',
+          },
+          accessControl: {
+            title: 'Control de acceso',
+            description: 'Permisos granulares para agentes, prompts y servidores MCP',
+          },
+          insights: {
+            title: 'Insights de administración',
+            description: 'Panel de uso y actividad de los agentes',
           },
         },
       },
